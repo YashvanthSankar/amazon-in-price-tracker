@@ -1,4 +1,4 @@
-# 📉 Amazon Price Tracker
+# 📉 AmazonIN Price Tracker
 
 A simple Node.js CLI tool that monitors the price of a product on [Amazon.in](https://www.amazon.in) and sends an email alert when the price drops below your desired threshold.   
 Built using **Nightmare.js** for web scraping and **SendGrid** for email notifications.
