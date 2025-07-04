@@ -1,6 +1,6 @@
 # 📉 AmazonIN Price Tracker
 
-A simple Node.js CLI tool that monitors the price of a product on [Amazon.in](https://www.amazon.in) and sends an email alert when the price drops below your desired threshold.   
+A simple Node.js CLI tool that monitors the price of a product on [Amazon.in](https://www.amazon.in) and sends an email alert when the price drops below your desired threshold.  
 Built using **Nightmare.js** for web scraping and **SendGrid** for email notifications.
 
 ---
@@ -17,10 +17,10 @@ Built using **Nightmare.js** for web scraping and **SendGrid** for email notific
 
 ## 🛠️ Tech Stack
 
-- [Node.js](https://nodejs.org/)
-- [Nightmare.js](https://www.npmjs.com/package/nightmare)
-- [SendGrid](https://sendgrid.com/)
-- [dotenv](https://www.npmjs.com/package/dotenv)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white&style=for-the-badge)](https://nodejs.org/)
+[![Nightmare.js](https://img.shields.io/badge/Nightmare.js-222222?logo=javascript&logoColor=yellow&style=for-the-badge)](https://www.npmjs.com/package/nightmare)
+[![SendGrid](https://img.shields.io/badge/SendGrid-008BB9?logo=sendgrid&logoColor=white&style=for-the-badge)](https://sendgrid.com/)
+[![dotenv](https://img.shields.io/badge/dotenv-8B8B8B?logo=npm&logoColor=white&style=for-the-badge)](https://www.npmjs.com/package/dotenv)
 
 ---
 
@@ -32,6 +32,7 @@ Built using **Nightmare.js** for web scraping and **SendGrid** for email notific
 git clone https://github.com/YOUR_USERNAME/amazon-price-tracker.git
 cd amazon-price-tracker
 ```
+
 2. **Install dependencies:**
 
 ```bash
@@ -45,22 +46,27 @@ Create a .env file in the root directory:
 ```env
 SENDGRID_API_KEY=your_sendgrid_api_key
 ```
+
 🔐 Note: The SENDGRID_FROM email must be verified in SendGrid.
 
 🧪 Usage
+
 ```bash
 node index.js "<amazon_product_url>" <threshold_price>
 ```
+
 🔁 Example:
+
 ```bash
 node index.js "https://www.amazon.in/dp/B0CS5XW6TN" 85000
 ```
+
 If the price drops below ₹85,000, you'll receive an email alert!
 
 ---
 
 ## 🚧 Limitations
--Amazon frequently changes its HTML structure; scraping selectors may break.
--Scraping too often may result in bot detection or blocks.
--Designed for personal/educational use only — respect website TOS.
 
+-Amazon frequently changes its HTML structure; scraping selectors may break.  
+-Scraping too often may result in bot detection or blocks.  
+-Designed for personal/educational use only — respect website TOS.
